@@ -1,0 +1,96 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('background.jpeg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(241, 231, 231, 0.8);;
+    padding: 20px;
+    border-radius: 16px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+textarea {
+    background: rgba(243, 241, 241, 0.8);
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: none;
+}
+
+input[type="text"] {
+    background: rgba(243, 241, 241, 0.8);
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px; /* Curved border for the submit button */
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #bcdafa;
+}
+
+button[type="submit"]:hover {
+    background-color: #98bfe9; /* Darker color on hover */
+    transform: scale(1.05);   /* Slightly enlarge button on hover */
+}
+
+.result {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgba(243, 241, 241, 0.8);
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.results p {
+    font-family: 'timesnewroman';
+    background: rgba(243, 241, 241, 0.8);;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.results p strong {
+    background: rgba(243, 241, 241, 0.8);;
+    color: #007BFF;
+}

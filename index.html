@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Analyzer</h1>
+        <form action="/analyze" method="post">
+            <textarea name="paragraph" rows="6" placeholder="Enter your paragraph here..." required></textarea>
+            <input type="text" name="word" placeholder="Enter the word to find..." required>
+            <button type="submit">Analyze</button>
+        </form>
+        {% if result %}
+        <div class="result">
+            <p>Word Frequency: {{ result.frequency }}</p>
+            <p>Is Unique: {{ 'Yes' if result.is_unique else 'No' }}</p>
+            <p>LSTM Prediction: {{ result.lstm_prediction }}</p>
+            <p>GRU Prediction: {{ result.gru_prediction }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
